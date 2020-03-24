@@ -7,7 +7,6 @@ import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
-
 public class Program {
 	public static void main(String[] args) {
 		ChessMatch chessMatch = new ChessMatch();
@@ -19,11 +18,11 @@ public class Program {
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
-				
+
 				System.out.println();
 				System.out.print("Targuet: ");
 				ChessPosition target = UI.readChessPosition(sc);
-				
+
 				ChessPiece capturedPiece = chessMatch.performeChessMove(source, target);
 			}
 			catch (ChessException e) {
